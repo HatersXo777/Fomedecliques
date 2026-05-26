@@ -23,6 +23,7 @@
 
   body {
     font-family: 'Nunito', sans-serif;
+  -webkit-text-size-adjust: 100%;
     background: var(--creme);
     color: var(--dark);
     overflow-x: hidden;
@@ -394,7 +395,7 @@
   }
 
   .cta-final::before {
-    content: '🍔';
+    content: '';
     position: absolute;
     font-size: 200px;
     opacity: 0.07;
@@ -403,7 +404,7 @@
   }
 
   .cta-final::after {
-    content: '🖱️';
+    content: '';
     position: absolute;
     font-size: 180px;
     opacity: 0.07;
@@ -475,6 +476,45 @@
     opacity: 1;
     transform: none;
   }
+
+  /* ===== MOBILE FIRST ===== */
+  @media (max-width: 600px) {
+    .hero { padding: 48px 20px 72px; }
+    .hero-headline { font-size: 38px; }
+    .hero-sub { font-size: 15px; margin: 18px auto 32px; }
+    .btn-hero { font-size: 16px; padding: 16px 32px; }
+
+    section { padding: 64px 20px; }
+
+    .dor-headline { font-size: 32px; }
+    .dor-cards { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .dor-card { padding: 16px 14px; flex-direction: column; gap: 8px; }
+    .dor-card .emoji { font-size: 22px; }
+    .dor-card p { font-size: 13px; }
+
+    .solucao-headline { font-size: 32px; }
+    .steps { gap: 14px; }
+    .step { padding: 18px 16px; gap: 14px; }
+    .step-num { width: 36px; height: 36px; font-size: 18px; }
+    .step-content h4 { font-size: 14px; }
+    .step-content p { font-size: 13px; }
+
+    .diferenciais-headline { font-size: 32px; }
+    .diferenciais-sub { font-size: 15px; margin-bottom: 36px; }
+    .dif-grid { grid-template-columns: 1fr; gap: 18px; }
+    .dif-card { padding: 24px 20px; }
+    .dif-icon { font-size: 34px; }
+    .dif-card h3 { font-size: 17px; }
+    .dif-card p { font-size: 14px; }
+
+    .cta-final { padding: 72px 20px; }
+    .cta-final h2 { font-size: 34px; }
+    .cta-final p { font-size: 16px; }
+    .btn-cta { font-size: 16px; padding: 18px 36px; }
+
+    footer { font-size: 13px; padding: 24px 20px; }
+  }
+
 </style>
 </head>
 <body>
@@ -488,9 +528,9 @@
     <span class="hl-laranja">Delivery.</span>
   </h1>
   <p class="hero-sub reveal">
-    Tráfego pago com estratégia feita pra quem vende comida de verdade — sem depender de plataforma, sem esperar indicação e sem torcer pro movimento aparecer.
+    Método Delivery Boom feita pra quem vende comida de verdade sem depender de plataforma, sem esperar indicação e sem torcer pro movimento aparecer.
   </p>
-  <a href="#cta" class="btn-hero reveal">Quero vender mais agora 🍔</a>
+  <a href="#cta" class="btn-hero reveal">Quero vender mais agora </a>
   <div class="scroll-hint">role pra ver</div>
 </section>
 
@@ -505,23 +545,23 @@
       <p>Um dia você abre e o WhatsApp não para de entrar. No outro, silêncio total. <strong>Nenhum pedido. Nenhuma notificação. Só você olhando pro telefone esperando.</strong></p>
       <p>Você já dependeu de indicação de amigo, já pagou caro pra aparecer no iFood e ficou com 30% do lucro na mão deles, já tentou postar todo dia nas redes e não viu resultado.</p>
       <p><strong>E no fundo você sabe:</strong> não é a comida o problema. A comida é boa. O problema é que as pessoas certas simplesmente não estão te encontrando.</p>
-      <p>Delivery sem fluxo constante de clientes não é negócio — é loteria. E você não merece ficar dependendo da sorte pra pagar as contas no fim do mês.</p>
+      <p>Delivery sem fluxo constante de clientes não é negócio é loteria. E você não merece ficar dependendo da sorte pra pagar as contas no fim do mês.</p>
     </div>
     <div class="dor-cards reveal">
       <div class="dor-card">
-        <span class="emoji">😤</span>
+        <span class="emoji"></span>
         <p>Dependência total do iFood e Rappi, que ficam com boa parte do lucro</p>
       </div>
       <div class="dor-card">
-        <span class="emoji">📉</span>
+        <span class="emoji"></span>
         <p>Movimento inconstante: dias cheios e dias que parecem que o restaurante fechou</p>
       </div>
       <div class="dor-card">
-        <span class="emoji">🙏</span>
+        <span class="emoji"></span>
         <p>Esperando indicação boca a boca como se fosse 2010</p>
       </div>
       <div class="dor-card">
-        <span class="emoji">😩</span>
+        <span class="emoji"></span>
         <p>Postando todo dia nas redes sem saber se alguém viu ou se vai virar pedido</p>
       </div>
     </div>
@@ -537,7 +577,7 @@
     </h2>
     <div class="solucao-text reveal">
       <p>Imagina acordar todo dia com conversas novas no WhatsApp, pedidos entrando pelo seu próprio sistema e uma fila de clientes que <strong>você não precisou correr atrás.</strong></p>
-      <p>Com anúncios certos, para as pessoas certas, no momento certo — isso não é sorte. É método. E é exatamente isso que a Fome de Cliques entrega.</p>
+      <p>Com anúncios certos, para as pessoas certas, no momento certo isso não é sorte. É método. E é exatamente isso que a Fome de Cliques entrega.</p>
     </div>
     <div class="steps reveal">
       <div class="step">
@@ -558,7 +598,7 @@
         <div class="step-num">3</div>
         <div class="step-content">
           <h4>Direcionamos para o seu canal de venda</h4>
-          <p>WhatsApp, link direto, cardápio digital — sem intermediário levando seu lucro. Você vende pelo seu canal e fica com tudo.</p>
+          <p>WhatsApp, link direto, cardápio digital sem intermediário levando seu lucro. Você vende pelo seu canal e fica com tudo.</p>
         </div>
       </div>
       <div class="step">
@@ -577,24 +617,24 @@
   <div class="container">
     <span class="tag reveal">o que faz um delivery realmente vender</span>
     <h2 class="diferenciais-headline reveal">
-      Tráfego sozinho<br>não basta.<br><em>Estratégia é tudo.</em>
+      Tráfego sozinho<br>não basta.<br><em>Método é tudo.</em>
     </h2>
     <p class="diferenciais-sub reveal">
       A gente não joga dinheiro em anúncio e torce pro melhor. Trabalhamos os três pilares que fazem um delivery faturar de verdade.
     </p>
     <div class="dif-grid">
       <div class="dif-card reveal">
-        <span class="dif-icon">🎯</span>
+        <span class="dif-icon"></span>
         <h3>Oferta que o cliente não consegue ignorar</h3>
-        <p>Preço, combo, urgência, exclusividade — sua oferta precisa fazer o cliente sentir que seria burro não pedir agora. A gente ajuda a montar isso com você.</p>
+        <p>Preço, combo, urgência, exclusividade sua oferta precisa fazer o cliente sentir que seria burro não pedir agora. A gente ajuda a montar isso com você.</p>
       </div>
       <div class="dif-card reveal">
-        <span class="dif-icon">🤤</span>
+        <span class="dif-icon"></span>
         <h3>Criativos que geram desejo de verdade</h3>
-        <p>Foto bonita que não vende não serve. Criamos imagens e vídeos que fazem a barriga roncar — porque é isso que transforma curtida em pedido.</p>
+        <p>Foto bonita que não vende não serve. Criamos imagens e vídeos que fazem a barriga roncar porque é isso que transforma curtida em pedido.</p>
       </div>
       <div class="dif-card reveal">
-        <span class="dif-icon">🚀</span>
+        <span class="dif-icon"></span>
         <h3>Entrega rápida e experiência competitiva</h3>
         <p>De nada adianta trazer o cliente se a entrega decepciona. Orientamos sobre posicionamento e experiência pra seu cliente voltar e ainda indicar.</p>
       </div>
@@ -605,12 +645,12 @@
 <!-- ===== CTA FINAL ===== -->
 <section class="cta-final" id="cta">
   <h2 class="reveal">Pronto pra ter<br>fome de cliques?</h2>
-  <p class="reveal">Chama a gente e descobre como seu delivery pode ter um fluxo constante de pedidos — sem depender de plataforma nenhuma.</p>
-  <a href="https://wa.me/48991607093?text=Oi!%20Quero%20saber%20mais%20sobre%20tr%C3%A1fego%20para%20meu%20delivery" class="btn-cta reveal">Falar com a equipe no WhatsApp 💬</a>
+  <p class="reveal">Chama a gente e descobre como seu delivery pode ter um fluxo constante de pedidos sem depender de plataforma nenhuma.</p>
+  <a href="https://wa.me/48991607093?text=Oi!%20Quero%20saber%20mais%20sobre%20tr%C3%A1fego%20para%20meu%20delivery" class="btn-cta reveal">Falar com a equipe no WhatsApp </a>
 </section>
 
 <footer>
-  <p>Feito com <span>♥</span> pela <span>Fome de Cliques</span> — Tráfego para Delivery</p>
+  <p>Feito por quem tem fome de resultados para quem tem fome de pedidos.</p>
 </footer>
 
 <script>
